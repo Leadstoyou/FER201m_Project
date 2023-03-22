@@ -27,6 +27,7 @@ function Login() {
       const user = userData.find(u => u.email === email && u.pass === password);
       if (user) {
         alert('Login successful');
+        
         navigation('/home');
       }     
       else {

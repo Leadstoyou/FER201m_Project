@@ -14,9 +14,6 @@ function App() {
     localStorage.setItem("comments", JSON.stringify(comments));
 
   }, []);
-
-
-
   return (
     <Router>
       <Routes>
