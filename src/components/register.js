@@ -19,12 +19,12 @@ const Register = () => {
                         <input type="text" placeholder="Fullname" />
                     </div>
                     <div className="register_checkbox">
-                        Gender:
+                        Gender: 
                         <input type="radio" name="gender" value = "Male" /> Male
                         <input type="radio" name="gender" value = "Female"/> Female
                     </div>
                     <div>
-                        <p>If the account is exist. <a>Login</a></p>
+                        <p>If the account is exist. <a href="">Login</a></p>
                     </div>
                     <div className="Register_button">
                         <button>Register</button>
