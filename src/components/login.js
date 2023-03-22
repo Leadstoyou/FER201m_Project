@@ -30,18 +30,18 @@ function Login() {
         <form className="login-form" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="username">Username</label>
-            <input type="text" required id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+            <input type="text" placeholder='Email address*' required id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
           </div>
           <div className="form-control">
             <label htmlFor="password">Password</label>
-            <input type="password" required id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" placeholder='Password*' required id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
           <div>
-          <button type="submit" className="login-button" disabled={isSubmitting}>Đăng nhập</button>
-          <button type="submit" className="login-button" disabled={isSubmitting}>Quên mật khẩu</button>
+            <button type="submit" className="login-button" disabled={isSubmitting}>Đăng nhập</button>
+            <button type="submit" className="login-button" disabled={isSubmitting}>Quên mật khẩu</button>
           </div>
           <hr></hr>
-          <div> 
+          <div>
             Bạn chưa có tài khoản?
             <a href="">Đăng ký</a>
           </div>

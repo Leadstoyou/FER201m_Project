@@ -17,13 +17,6 @@
   margin: 0 10px;
 }
 
-.nav-item.left {
-  order: 1;
-}
-
-.nav-item.right {
-  order: 2;
-}
 
 input {
   padding: 5px;
