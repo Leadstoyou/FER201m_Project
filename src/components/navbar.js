@@ -18,10 +18,10 @@ function Navbar() {
           <button>Tìm</button>
         </li>
         <li className="nav-item right">
-          <a href="#" className="nav-link">Đăng nhập</a>
+          <a href="./" className="nav-link">Đăng nhập</a>
         </li>
         <li className="nav-item right">
-          <a href="#" className="nav-link">Đăng ký</a>
+          <a href="./register" className="nav-link">Đăng ký</a>
         </li>
       </ul>
     </nav>
