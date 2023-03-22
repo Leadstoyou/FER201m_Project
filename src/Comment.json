@@ -1,0 +1,47 @@
+[
+	{"id": 1, "userID": 1, "movieID": 1, "comment": "", "score": 8},
+    {"id": 2, "userID": 1, "movieID": 2, "comment": "", "score": 7},
+    {"id": 3, "userID": 1, "movieID": 3, "comment": "", "score": 5},
+    {"id": 4, "userID": 1, "movieID": 4, "comment": "", "score": 4},
+    {"id": 5, "userID": 1, "movieID": 5, "comment": "", "score": 9},
+    {"id": 6, "userID": 1, "movieID": 6, "comment": "", "score": 1},
+    {"id": 7, "userID": 1, "movieID": 7, "comment": "", "score": 3},
+    {"id": 8, "userID": 1, "movieID": 8, "comment": "", "score": 8},
+
+    {"id": 9, "userID": 2, "movieID": 1, "comment": "", "score": 8},
+    {"id": 10, "userID": 2, "movieID": 2, "comment": "", "score": 7},
+    {"id": 11, "userID": 2, "movieID": 3, "comment": "", "score": 5},
+    {"id": 12, "userID": 2, "movieID": 4, "comment": "", "score": 4},
+    {"id": 13, "userID": 2, "movieID": 5, "comment": "", "score": 9},
+    {"id": 14, "userID": 2, "movieID": 6, "comment": "", "score": 1},
+    {"id": 15, "userID": 2, "movieID": 7, "comment": "", "score": 3},
+    {"id": 16, "userID": 2, "movieID": 8, "comment": "", "score": 8},
+
+    {"id": 17, "userID": 3, "movieID": 1, "comment": "", "score": 8},
+    {"id": 18, "userID": 3, "movieID": 2, "comment": "", "score": 7},
+    {"id": 19, "userID": 3, "movieID": 3, "comment": "", "score": 5},
+    {"id": 20, "userID": 3, "movieID": 4, "comment": "", "score": 4},
+    {"id": 21, "userID": 3, "movieID": 5, "comment": "", "score": 9},
+    {"id": 22, "userID": 3, "movieID": 6, "comment": "", "score": 1},
+    {"id": 23, "userID": 3, "movieID": 7, "comment": "", "score": 3},
+    {"id": 24, "userID": 3, "movieID": 8, "comment": "", "score": 8},
+
+    {"id": 25, "userID": 4, "movieID": 1, "comment": "", "score": 8},
+    {"id": 26, "userID": 4, "movieID": 2, "comment": "", "score": 7},
+    {"id": 27, "userID": 4, "movieID": 3, "comment": "", "score": 5},
+    {"id": 28, "userID": 4, "movieID": 4, "comment": "", "score": 4},
+    {"id": 29, "userID": 4, "movieID": 5, "comment": "", "score": 9},
+    {"id": 30, "userID": 4, "movieID": 6, "comment": "", "score": 1},
+    {"id": 31, "userID": 4, "movieID": 7, "comment": "", "score": 3},
+    {"id": 32, "userID": 4, "movieID": 8, "comment": "", "score": 8},
+
+    {"id": 33, "userID": 5, "movieID": 1, "comment": "", "score": 8},
+    {"id": 34, "userID": 5, "movieID": 2, "comment": "", "score": 7},
+    {"id": 35, "userID": 5, "movieID": 3, "comment": "", "score": 5},
+    {"id": 36, "userID": 5, "movieID": 4, "comment": "", "score": 4},
+    {"id": 37, "userID": 5, "movieID": 5, "comment": "", "score": 9},
+    {"id": 38, "userID": 5, "movieID": 6, "comment": "", "score": 1},
+    {"id": 39, "userID": 5, "movieID": 7, "comment": "", "score": 3},
+    {"id": 40, "userID": 5, "movieID": 8, "comment": "", "score": 8}
+    
+]
