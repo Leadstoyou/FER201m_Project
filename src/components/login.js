@@ -8,27 +8,35 @@ import { useNavigate } from 'react-router';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  let check = false;
+  let check2 = false;
   const navigation = useNavigate();
-  useEffect(() => {
-    // Your login logic here
-  }, [isSubmitting]);
 
-  const handleSubmit = async e  => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setIsSubmitting(true);
-    userData.map(user => {
-      if(user.email === email && user.pass === password){
-        check = true;
-        alert('Login successful');
-        return navigation('/home');
-      }
-    })
-    if (!check) {
-      alert('Tài khoản mật khẩu không chính xác');
+   if(email ==='' || password === ''){
+      check2 = true;
+      const messusername = document.getElementById('mess-username')
+      messusername.innerText =  email === '' ? 'Email không được để trống':'';
+      messusername.style.color = 'red';
+
+      const messpassword = document.getElementById('mess-password')
+      messpassword.innerText =  password === ''? 'Mật khẩu không được để trống':'';
+      messpassword.style.color = 'red';
     }
+    else{      
+      const user = userData.find(u => u.email === email && u.pass === password);
+      if (user) {
+        alert('Login successful');
+        navigation('/home');
+      }     
+      else {
+        const a = !user && !check2;
+        const mess = document.getElementById('mess');
+        mess.innerText = a ? 'Email hoặc mật khẩu không đúng':'';
+        mess.style.color = 'red';
+      }
   }
+}
 
   return (
     <div>
@@ -42,16 +50,20 @@ function Login() {
         <form className="login-form" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="username">Username</label>
-            <input type="text" placeholder='Email address*' required id="username" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="text" placeholder='Email address*' id="username" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
+          <p id="mess-username"></p>
           <div className="form-control">
             <label htmlFor="password">Password</label>
-            <input type="password" placeholder='Password*' required id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" placeholder='Password*' id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
+          <p id="mess-password"></p>
+          <p id='mess'></p>
           <div>
-            <button type="submit" className="login-button" disabled={isSubmitting}>Đăng nhập</button>
-            <button type="submit" className="login-button" disabled={isSubmitting}>Quên mật khẩu</button>
+            <button type="submit" className="login-button" >Đăng nhập</button>
+            <button type="submit" className="login-button" >Quên mật khẩu</button>
           </div>
+          <p id="mess-password"></p>
           <hr></hr>
           <div>
             Bạn chưa có tài khoản?
@@ -65,10 +77,3 @@ function Login() {
 }
 
 export default Login;
-
-fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-
-

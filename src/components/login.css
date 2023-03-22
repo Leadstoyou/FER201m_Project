@@ -17,11 +17,11 @@
 }
 
 .login-container button:hover {
-  background-color: #2e4473; /* Slightly darker Facebook blue color on hover */
+  background-color: #2e4473; 
 }
 
 .login-container button:nth-of-type(2) {
-  background-color: #db4437; /* Google red color */
+  background-color: #db4437; 
 }
 
 .login-container p {
@@ -32,7 +32,7 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
