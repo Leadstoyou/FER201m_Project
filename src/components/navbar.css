@@ -1,7 +1,8 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center;  */
 }
 
 .nav-menu {
@@ -17,7 +18,26 @@
   margin: 0 10px;
 }
 
+.nav-item left{
+  float: left;
+}
 
+.nav-item right{
+  float: right;
+}
+
+.nav-item left h4,a{
+  text-decoration: none;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a {
+  margin: 10px;
+}
 input {
   padding: 5px;
   border-radius: 5px;
