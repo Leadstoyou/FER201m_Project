@@ -7,6 +7,12 @@ const Home = () => {
   const [films, setfilms] = useState(JSON.parse(localStorage.getItem("films")));
   const [listCategory, setlistCategory] = useState(categories);
   console.log(films, listCategory);
+
+  const handleClickCategory = (category) => {
+    // const newFilms = films.filter((film) => film.category === category);
+    // setfilms(newFilms);
+    console.log(category)
+  };
   return (
     <div>
       <Navbar />
@@ -18,7 +24,9 @@ const Home = () => {
               <ul>
                 {listCategory.map((category, index) => (
                   <li key={index}>
-                    <a style={{textDecoration: "none", color: "#3b5998"}} href={`/home/category${category.id}`}>{category.category}</a>
+                    <a href={category.category} onClick={handleClickCategory(category.category)}>
+                      {category.category}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -37,11 +45,12 @@ const Home = () => {
                       width: "100%",
                       height: "300px",
                       objectFit: "cover",
-                      alt:`Picture #${index}`
+                      alt: `Picture #${index}`,
                     }}
                     src={film.imageUrl}
                   />
                   <div className="album_des">
+
                     <h4 style={{display: "flex"}}>Name: {film.name}</h4>  
                   </div>
                   <div className="album_des">
@@ -49,6 +58,7 @@ const Home = () => {
                   </div>
                   <div className="album_des">
                     <h4 style={{color: "green", display: "flex"}}>Score: {film.score}</h4>
+
                   </div>
                   <button className="album_but">Comment</button>
                 </div>
