@@ -25,7 +25,7 @@
 
 .albums_title {
 	height: 5rem;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 800;
 	cursor: pointer;
 	margin-bottom: 2rem;
@@ -70,10 +70,14 @@
 }
 
 .album_but {
-	margin-top: 5px;
-	margin-bottom: 10px;
-	margin-left: 55px;
-	justify-items: center;
+	background-color: #3b5998; /* Facebook blue color */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 20px 30px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
 }
 
 .albums_input>input {

@@ -20,6 +20,7 @@ const Home = () => {
         <div className="home_wrap">
           <div className="albums_category">
             <div className="albums_title">
+              <h2>TYPE:</h2>
               <ul>
                 {listCategory.map((category, index) => (
                   <li key={index}>
@@ -49,16 +50,15 @@ const Home = () => {
                     src={film.imageUrl}
                   />
                   <div className="album_des">
-                    <h5>Name:</h5>
-                    {film.name}
+
+                    <h4 style={{display: "flex"}}>Name: {film.name}</h4>  
                   </div>
                   <div className="album_des">
-                    <h5>Type:</h5>
-                    {film.category}
+                    <h4 style={{color: "orange", display: "flex"}}>Type: {film.category}</h4>
                   </div>
                   <div className="album_des">
-                    <h5>Score:</h5>
-                    {film.score}
+                    <h4 style={{color: "green", display: "flex"}}>Score: {film.score}</h4>
+
                   </div>
                   <button className="album_but">Comment</button>
                 </div>
