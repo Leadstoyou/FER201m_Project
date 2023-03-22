@@ -1,0 +1,10 @@
+[
+	{"id": 1, "category": "Action", "name": "John Wick", "description": "18+", "score": 8, "createDate": 2014},
+	{"id": 2, "category": "Romantic", "name": "Titanic", "description": "18+", "score": 9,  "createDate": 1997 },
+	{"id": 3, "category": "Horror", "name": "The Conjuring", "description": "18+", "score": 9,  "createDate": 2013 },
+	{"id": 4, "category": "Romantic", "name": "Beauty and the Beast",   "description": "18+", "score": 9,  "createDate": 2017 },
+	{"id": 5, "category": "Cartoon", "name": "One Piece", "description": "6+", "score": 9,  "createDate": 1997 },
+    {"id": 6, "category": "Cartoon", "name": "Dragon Ball", "description": "6+", "score": 9,  "createDate": 1984 },
+    {"id": 7, "category": "Science Fiction", "name": "Annihilation", "description": "12+", "score": 9,  "createDate": 2015 },
+    {"id": 8, "category": "Horror", "name": "Annabelle", "description": "18+", "score": 9,  "createDate": 2014 }
+]

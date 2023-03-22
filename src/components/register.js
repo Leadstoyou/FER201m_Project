@@ -20,10 +20,8 @@ const Register = () => {
                     </div>
                     <div className="register_checkbox">
                         Gender:
-                        <select>
-                            <option value="">Male</option>
-                            <option value="">Female</option>
-                        </select>
+                        <input type="radio" name="gender" value = "Male" /> Male
+                        <input type="radio" name="gender" value = "Female"/> Female
                     </div>
                     <div>
                         <p>If the account is exist. <a>Login</a></p>
