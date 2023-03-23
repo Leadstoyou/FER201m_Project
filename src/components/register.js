@@ -31,8 +31,7 @@ const Register = () => {
       } else {
         users.push(newUser);
         localStorage.setItem("users", JSON.stringify(users));
-        localStorage.setItem("UserID", newUser.id);
-        return navigation("/home");
+        return navigation("/");
       }
     };
  
