@@ -1,43 +1,41 @@
 .home {
-<<<<<<< HEAD
-	padding-top: 100px;
+padding-top: 100px;
 	padding-bottom: 50px;
-  }
-  
-  .home_wrap {
+}
+
+.home_wrap {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
-  }
-  
-  .albums_category {
+}
+
+.albums_category {
 	width: 20%;
-  }
-  
-  .albums_title {
+}
+
+.albums_title {
 	margin-bottom: 20px;
-  }
-  
-  .albums_title h2 {
+}
+
+.albums_title h2 {
 	font-size: 24px;
 	font-weight: 500;
 	margin-bottom: 10px;
-  }
-  
-  .albums_title ul {
+}
+
+.albums_title ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-  }
-  
-  .albums_title li {
+}
+
+.albums_title li {
 	margin-bottom: 10px;
-  }
-  
-  .albums_title li a {
+}
+
+.albums_title li a {
 	color: #000;
 	font-size: 16px;
-=======
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -109,7 +107,8 @@
 }
 
 .album_but {
-	background-color: #3b5998; /* Facebook blue color */
+	background-color: #3b5998;
+	/* Facebook blue color */
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -153,44 +152,43 @@
 }
 
 .card_wrap {
->>>>>>> 129bab94a20df5dfc0210b43d8dff7aa25f464eb
-	text-decoration: none;
-  }
-  
-  .albums_title li a:hover {
+ text-decoration: none;
+}
+
+.albums_title li a:hover {
 	color: orange;
 	cursor: pointer;
-  }
-  
-  .album_items_container {
+}
+
+.album_items_container {
 	width: 78%;
-  }
-  
-  .albums_items {
+}
+
+.albums_items {
 	display: flex;
 	flex-wrap: wrap;
-  }
-  
-  .albums_items_wrap {
+}
+
+.albums_items_wrap {
 	width: 250px;
 	margin-top: 20px;
-  }
-  
-  .album_des {
+}
+
+.album_des {
 	padding: 5px 0;
-  }
-  
-  .album_des h4 {
+}
+
+.album_des h4 {
 	font-size: 16px;
 	font-weight: 500;
 	margin-bottom: 5px;
-  }
-  
-  .album_but {
+}
+
+.album_but {
 	padding: 5px 20px;
 	background-color: #000;
 	color: #fff;
 	border: none;
 	cursor: pointer;
 	margin-top: 10px;
-  }
+}
