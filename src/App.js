@@ -1,3 +1,4 @@
+
 import "./App.css";
 import Login from "./components/login";
 import Register from "./components/register";
@@ -8,6 +9,7 @@ import users from "./User.json";
 import films from './Film.json';
 import comments from './Comment.json';
 import MovieDetails from './components/details'
+
 function App() {
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(users));
@@ -23,8 +25,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
         <Route path="/home" element={<Home />} />
         <Route path="/details/:movieId" element={<MovieDetails />} />
+
       </Routes>
     </Router>
   );
