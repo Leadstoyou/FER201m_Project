@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "./home.css";
 import categories from "../Categories.json";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [films, setfilms] = useState(JSON.parse(localStorage.getItem("films")));
   const [listCategory, setlistCategory] = useState(categories);
@@ -17,7 +18,7 @@ const Home = () => {
               <ul>
                 {listCategory.map((category, index) => (
                   <li key={index}>
-                    <a href={`/home/category${category.id}`}>{category.category}</a>
+                    <a href={`/home/category/${category.id}`}>{category.category}</a>
                   </li>
                 ))}
               </ul>
@@ -36,12 +37,12 @@ const Home = () => {
                       width: "100%",
                       height: "300px",
                       objectFit: "cover",
-                      alt:`Picture #${index}`
+                      alt: `Picture #${index}`
                     }}
                     src={film.imageUrl}
                   />
                   <div className="album_des">
-                    <h5>Name:</h5>{film.name}
+                    <h5>Name:</h5>{film.username}
                   </div>
                   <div className="album_des">
                     <h5>Type:</h5>{film.category}
@@ -49,7 +50,12 @@ const Home = () => {
                   <div className="album_des">
                     <h5>Score:</h5>{film.score}
                   </div>
-                  <button className="album_but">Comment</button>
+                  <Link to={`/details/${film.id}`} className="album_but">
+                    <button className="album_but">Comment</button>
+                  </Link>
+
+
+
                 </div>
               ))}
             </div>
