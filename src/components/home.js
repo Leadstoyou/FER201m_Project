@@ -79,7 +79,8 @@ const Home = () => {
                     <h4 style={{color: "green", display: "flex"}}>Score: {film.score}</h4>
 
                   </div>
-                  <button className="album_but">Comment</button>
+                  <a href="/details" ><button className="album_but">Comment</button></a>
+                  
                 </div>
               ))}
             </div>
