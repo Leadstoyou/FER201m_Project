@@ -6,11 +6,12 @@ import userData from '../User.json';
 import { useNavigate } from 'react-router';
 
 function Login() {
+  const listusers = JSON.parse(localStorage.getItem("users"));
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   let check2 = false;
   const navigation = useNavigate();
-
+  const [userData, setuserData] = useState(listusers);
   const handleSubmit = async e => {
     e.preventDefault();
    if(email ==='' || password === ''){

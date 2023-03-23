@@ -3,16 +3,32 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "./home.css";
 import categories from "../Categories.json";
+import { useLocation } from "react-router";
+
 const Home = () => {
+  const location = useLocation();
   const [films, setfilms] = useState(JSON.parse(localStorage.getItem("films")));
   const [listCategory, setlistCategory] = useState(categories);
-  console.log(films, listCategory);
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const searchParam = searchParams.get("search");
+    if (searchParam != null) {
+      const newFilms = JSON.parse(localStorage.getItem("films")).filter(
+        (film) => film.name.toLowerCase().includes(searchParam.toLowerCase())
+      );
+      setfilms(newFilms);
+    }
+  }, [location.search]);
+  
 
   const handleClickCategory = (category) => {
-    // const newFilms = films.filter((film) => film.category === category);
-    // setfilms(newFilms);
-    console.log(category)
+    const newFilms = JSON.parse(localStorage.getItem("films")).filter(
+      (film) => film.category === category
+    );
+    setfilms(newFilms);
   };
+
   return (
     <div>
       <Navbar />
@@ -23,7 +39,10 @@ const Home = () => {
               <ul>
                 {listCategory.map((category, index) => (
                   <li key={index}>
-                    <a href={category.category} onClick={handleClickCategory(category.category)}>
+                    <a
+                      href="#"
+                      onClick={() => handleClickCategory(category.category)}
+                    >
                       {category.category}
                     </a>
                   </li>
